@@ -10,6 +10,10 @@
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
   <script src="./jquery-3.6.1.min.js"></script>
   <link rel="icon" type="image/x-icon" href="./majidpub.png">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
   <title>فرزاد بوک</title>
 
 </head>
@@ -58,10 +62,49 @@
   </nav>
   <!-- header-end -->
   <main>
-    <div class="asd">
-      sdffdffdsdsd
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./4.jpg" alt=""></div>
+      </div>
     </div>
-    dsdsd
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <div class="foro">
+      <div class="rab">
+      <h2 class="asq">
+      <span>پرفروش ها</span>
+    </h2>
+    </div>
+    </div>
+    <div class="foro">
+      <div class="rab">
+      <h2 class="asq">
+      <span>تازه ها</span>
+    </h2>
+    </div>
+    </div>
+    <div class="foro">
+      <div class="rab">
+      <h2 class="asq">
+      <span>نویسنده و مترجم</span>
+    </h2>
+    </div>
+    </div>
+    <div class="foro">
+      <div class="rab">
+      <h2 class="asq">
+      <span>کودک و نوجوان</span>
+    </h2>
+    </div>
+    </div>
+    <div class="foro">
+      <div class="rab">
+      <h2 class="asq">
+      <span>زبان خارجی</span>
+    </h2>
+    </div>
+    </div>
+    dsfsfsdfsfdf
   </main>
   <section class="newsletter">
     <div class="content">
@@ -131,5 +174,22 @@
   </footer>
 </body>
 <script src="./main.js"></script>
-
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </html>
